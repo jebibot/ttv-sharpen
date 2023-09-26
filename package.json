@@ -1,0 +1,19 @@
+{
+  "name": "ttv-sharpen",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "zip extension.zip *.html *.js *.css *.png manifest.json",
+    "postversion": "manifest=\"$(jq \".version = `jq '.version' package.json`\" manifest.json)\" && echo \"$manifest\" > manifest.json",
+    "publish": "chrome-webstore-upload upload --source=extension.zip --auto-publish",
+    "lint": "prettier --check . && eslint . && stylelint \"*.css\"",
+    "lint:fix": "prettier --write . && eslint --fix . && stylelint --fix \"*.css\""
+  },
+  "devDependencies": {
+    "chrome-webstore-upload-cli": "^2.2.2",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0"
+  }
+}
