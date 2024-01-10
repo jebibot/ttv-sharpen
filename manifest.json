@@ -18,7 +18,8 @@
       "exclude_globs": ["*://api.twitch.tv/*"],
       "js": ["script.js"],
       "css": ["style.css"],
-      "matches": ["*://*.twitch.tv/*"]
+      "matches": ["*://*.twitch.tv/*"],
+      "all_frames": true
     }
   ]
 }
