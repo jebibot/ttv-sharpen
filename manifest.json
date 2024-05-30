@@ -3,9 +3,7 @@
   "description": "트위치의 영상에 선명하게 필터를 적용합니다.",
   "version": "1.1.2",
   "manifest_version": 3,
-  "permissions": [
-    "storage"
-  ],
+  "permissions": ["storage"],
   "icons": {
     "16": "icon-16.png",
     "32": "icon-32.png",
@@ -17,18 +15,10 @@
   },
   "content_scripts": [
     {
-      "exclude_globs": [
-        "*://api.twitch.tv/*"
-      ],
-      "js": [
-        "script.js"
-      ],
-      "css": [
-        "style.css"
-      ],
-      "matches": [
-        "*://*.twitch.tv/*"
-      ],
+      "exclude_globs": ["*://api.twitch.tv/*"],
+      "js": ["script.js"],
+      "css": ["style.css"],
+      "matches": ["*://*.twitch.tv/*"],
       "all_frames": true
     }
   ]
