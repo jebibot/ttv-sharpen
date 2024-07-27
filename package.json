@@ -10,7 +10,7 @@
     "lint:fix": "prettier --write . && eslint --fix . && stylelint --fix \"*.css\""
   },
   "devDependencies": {
-    "chrome-webstore-upload-cli": "^3.3.0",
+    "chrome-webstore-upload-cli": "^3.3.1",
     "eslint": "^8.57.0",
     "prettier": "^3.3.3",
     "stylelint": "^16.7.0",
