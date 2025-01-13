@@ -13,7 +13,7 @@
     "chrome-webstore-upload-cli": "^3.3.1",
     "eslint": "^8.57.1",
     "prettier": "^3.3.3",
-    "stylelint": "^16.13.0",
+    "stylelint": "^16.13.1",
     "stylelint-config-standard": "^36.0.1"
   }
 }
