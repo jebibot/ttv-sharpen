@@ -12,7 +12,7 @@
   "devDependencies": {
     "chrome-webstore-upload-cli": "^3.3.2",
     "eslint": "^8.57.1",
-    "prettier": "^3.3.3",
+    "prettier": "^3.6.2",
     "stylelint": "^16.22.0",
     "stylelint-config-standard": "^36.0.1"
   }
